@@ -1,0 +1,17 @@
+{
+  "name": "paint-vanillajs",
+  "version": "1.0.0",
+  "description": "App para pintar",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "paint",
+    "javascript",
+    "drawing",
+    "canvas"
+  ],
+  "author": "Noelia MH",
+  "license": "ISC"
+}

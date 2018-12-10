@@ -1,0 +1,243 @@
+
+*{font-family:sans-serif;}
+
+body{
+  margin: 0;
+  background-color: #E6E6E6;
+}
+
+main{
+  width: 85%;
+  margin:15px auto auto auto;
+}
+
+#canvas {
+  background : #fff;
+  /*display: inline-block;*/
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+        border: 3px solid grey;
+}
+
+#tools{
+  width: 21%;
+  text-align: center;
+  margin-top: 21px;
+  float: right;
+  background-color: white;
+  padding: 15px;
+  border-radius: 25px;
+  border: 3px solid grey;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+/*
+#undo,
+#redo,
+#clear{
+  float: left;
+  margin: auto 15px auto 7px;
+}*/
+#firstButtonRow{
+  margin-bottom: 27px;
+}
+
+/* Estilo general para todos los buttons del documento */
+button{
+  padding: 5px 5px;
+  margin: 1px;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  border: 1px solid transparent;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+#colors {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-gap: 5px;
+}
+
+.circle {
+	width: 35px;
+	height: 35px;
+  margin: 11px;
+	border-radius: 50%;
+  margin-left: 15px;
+	/* the magic */
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+}
+
+/*Estilo de la clase activa, y botones en mouse-over sobre los colores */
+.active,
+.circle:hover {
+	width: 45px;
+	height: 45px;
+	margin: 1px 0 1px 15px;
+	outline: none;
+}
+
+/*********************
+****** PINCELES ******
+**********************/
+
+#brushes > button{
+  margin-bottom: 15px;
+}
+
+.selected,
+.brushSize:hover {
+margin-right: 25px;
+}
+
+.small{
+  background-color: black;
+  width: 199px;
+  padding: 1px;
+  border-radius: 5px;
+}
+
+.med{
+  background-color: black;
+  width: 199px;
+  padding: 3px;
+  border-radius: 5px;
+}
+.large{
+  background-color: black;
+  width: 199px;
+  padding: 5px;
+  border-radius: 5px;
+}
+.xlarge{
+  background-color: black;
+  width: 199px;
+  padding:7px;
+  border-radius: 5px;
+}
+
+/***********************
+*** COLORES PINCELES ***
+************************/
+
+.blue {
+	background-color: #3498db;
+}
+
+.lawnGreen{
+  background-color:#7CFC00;
+}
+
+.green {
+	background-color: #16a085;
+}
+
+.bisque{
+  background-color: #FFE4C4;
+}
+
+.magenta{
+  background-color: #FF00FF;
+}
+
+.red {
+	background-color: #e74c3c;
+}
+
+.green {
+	background-color: green;
+}
+
+.orange {
+	background-color: orange;
+}
+
+.gold{
+  background-color: #FFD700;
+}
+
+.deepPink{
+  background-color: #FF1493;
+}
+
+.aqua{
+  background-color: #00FFFF;
+}
+
+.deepSkyBlue{
+  background-color: #00BFFF;
+}
+
+.springGreen{
+  background-color: #00FF7F;
+}
+
+.purple {
+	background-color: purple;
+}
+
+.white{
+  border: 3px solid black;
+  background-color: white: ;
+}
+
+.navy{
+  background-color: #000080;
+}
+
+.turquoise {
+	background-color: #1DE9B6;
+}
+
+.salmon{
+  background-color: #FA8072;
+}
+
+.royalBlue{
+  background-color: #4169E1;
+}
+
+.lightPurple {
+	background-color: #9D81FE;
+}
+
+.black {
+	background-color: black;
+}
+
+/**********************************
+****** CSS Móviles y tablets ******
+***********************************/
+@media only screen and (max-width: 1366px){
+  /*Canvas*/
+  #canvas{
+    width: 100%;
+    height: 705px;
+    margin-bottom: 15px;
+  }
+
+  #tools{
+    width: 95%;
+    padding: 5px;
+  }
+
+#undo,
+#redo,
+#clear{
+margin: 0 auto;
+float: none;
+}
+    .circle{
+      margin-left: 25%;
+    }
+
+    .active,
+    .circle:hover {
+    	margin: 0px 0px 0px 3px;
+    }
+}
