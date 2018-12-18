@@ -1,4 +1,4 @@
-# Drawing-Vanillajs
+# Paint-Vanillajs
 App web para pintar
 
 Funciones:
